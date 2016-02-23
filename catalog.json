@@ -1,0 +1,40 @@
+{
+  "services": [
+    {
+      "name": "azurestorage",
+      "id": "2e2fc314-37b6-4587-8127-8f9ee8b33fea",
+      "description": "Provides Azure Storage Service, including storage account creation, container creation, access key generation",
+      "requires": [],
+      "tags": [
+        "Azure",
+        "Storage"
+      ],
+      "bindable": true,
+      "metadata": {
+        "displayName": "Azure Storage Service",
+        "imageUrl": "http://catgifpage.com/cat.gif",
+        "longDescription": "Provides Azure Storage Service, including storage account creation, container creation, access key generation",
+        "providerDisplayName": "Microsoft",
+        "documentationUrl": "https://github.com/bingosummer/azurestorage",
+        "supportUrl": "https://github.com/bingosummer/azurestorage/issues"
+      },
+      "dashboard_client": {
+        "id": "<sso-test>",
+        "secret": "<sso-secret>",
+        "redirect_uri": "http://example.com"
+      },
+      "plan_updateable": true,
+      "plans": [
+        {
+          "name": "default",
+          "id": "6ddf6b41-fb60-4b70-af99-8ecc4896b3cf",
+          "description": "An Azure Storage Account plan providing a single container with unlimited storage.",
+          "metadata": {
+            "cost": 0,
+            "bullets": ["Single Azure Storage container", "Unlimited storage", "Unlimited number of objects"]
+          }
+        }
+      ]
+    }
+  ]
+}

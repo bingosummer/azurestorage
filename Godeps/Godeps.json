@@ -1,0 +1,57 @@
+{
+	"ImportPath": "github.com/bingosummer/azurestorage",
+	"GoVersion": "go1.5",
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/Azure/azure-sdk-for-go/arm/resources/resources",
+			"Comment": "v1.2-334-g95361a2",
+			"Rev": "95361a2573b1fa92a00c5fc2707a80308483c6f9"
+		},
+		{
+			"ImportPath": "github.com/Azure/azure-sdk-for-go/arm/storage",
+			"Comment": "v1.2-334-g95361a2",
+			"Rev": "95361a2573b1fa92a00c5fc2707a80308483c6f9"
+		},
+		{
+			"ImportPath": "github.com/Azure/azure-sdk-for-go/storage",
+			"Comment": "v1.2-334-g95361a2",
+			"Rev": "95361a2573b1fa92a00c5fc2707a80308483c6f9"
+		},
+		{
+			"ImportPath": "github.com/Azure/go-autorest/autorest",
+			"Comment": "v3.0.0-28-g988f103",
+			"Rev": "988f103254a561b67a76087be8bbb85b58fae107"
+		},
+		{
+			"ImportPath": "github.com/Azure/go-autorest/autorest/azure",
+			"Comment": "v3.0.0-28-g988f103",
+			"Rev": "988f103254a561b67a76087be8bbb85b58fae107"
+		},
+		{
+			"ImportPath": "github.com/Azure/go-autorest/autorest/date",
+			"Comment": "v3.0.0-28-g988f103",
+			"Rev": "988f103254a561b67a76087be8bbb85b58fae107"
+		},
+		{
+			"ImportPath": "github.com/Azure/go-autorest/autorest/to",
+			"Comment": "v3.0.0-28-g988f103",
+			"Rev": "988f103254a561b67a76087be8bbb85b58fae107"
+		},
+		{
+			"ImportPath": "github.com/dgrijalva/jwt-go",
+			"Comment": "v2.4.0-11-gf219341",
+			"Rev": "f2193411bd642f7db03249fd79d5292c9b34916a"
+		},
+		{
+			"ImportPath": "github.com/gorilla/context",
+			"Rev": "1ea25387ff6f684839d82767c1733ff4d4d15d0a"
+		},
+		{
+			"ImportPath": "github.com/gorilla/mux",
+			"Rev": "c9e326e2bdec29039a3761c07bece13133863e1e"
+		}
+	]
+}
