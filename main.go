@@ -39,7 +39,8 @@ func main() {
 	}
 
 	if operation == "Catalog" {
-		bytes, err := utils.ReadFile("catalog.json")
+		catalogPath := utils.GetPath([]string{"catalog.json"})
+		bytes, err := utils.ReadFile(catalogPath)
 		if err != nil {
 			fmt.Printf("Error: %v\n", err)
 			panic("Error reading catalog.json...")
