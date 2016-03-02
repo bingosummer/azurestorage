@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
+	"os"
 	"strings"
 
 	"github.com/Azure/azure-sdk-for-go/arm/storage"
@@ -33,13 +34,18 @@ func init() {
 func main() {
 	flag.Parse()
 
+	if operation == "" {
+		os.Exit(1)
+	}
+
 	if operation == "Catalog" {
 		bytes, err := utils.ReadFile("catalog.json")
 		if err != nil {
 			fmt.Printf("Error: %v\n", err)
 			panic("Error reading catalog.json...")
 		}
-		fmt.Printf("%v\n", string(bytes))
+		fmt.Println(string(bytes))
+		os.Exit(0)
 	}
 
 	serviceClient := ac.NewClient()
