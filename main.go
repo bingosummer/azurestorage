@@ -14,6 +14,7 @@ import (
 )
 
 var (
+	environment   string
 	operation     string
 	parametersStr string
 	instance      model.ServiceInstance
@@ -27,6 +28,7 @@ const (
 )
 
 func init() {
+	flag.StringVar(&environment, "environment", "", "The public environment (AzureCloud, AzureChinaCloud, AzureUSGovernment) targeted")
 	flag.StringVar(&operation, "operation", "", "The operation (Catalog, Provision, Poll, Bind, Unbind, Deprovision) to manage the service instance")
 	flag.StringVar(&parametersStr, "parameters", "", "The paramters to manage the service instance")
 }
