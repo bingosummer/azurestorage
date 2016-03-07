@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"flag"
 	"fmt"
 	"os"
 	"strings"
@@ -27,15 +26,14 @@ const (
 	LOCATION                    = "eastus"
 )
 
-func init() {
-	flag.StringVar(&environment, "environment", "", "The public environment (AzureCloud, AzureChinaCloud, AzureUSGovernment) targeted")
-	flag.StringVar(&operation, "operation", "", "The operation (Catalog, Provision, Poll, Bind, Unbind, Deprovision) to manage the service instance")
-	flag.StringVar(&parametersStr, "parameters", "", "The paramters to manage the service instance")
-}
-
 func main() {
-	flag.Parse()
-
+	argsNum := len(os.Args)
+	if argsNum != 4 {
+		os.Exit(1)
+	}
+	environment = os.Args[1]
+	operation = os.Args[2]
+	parametersStr = os.Args[3]
 	if operation == "" {
 		os.Exit(1)
 	}
